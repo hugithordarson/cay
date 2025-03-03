@@ -14,6 +14,7 @@
 		<!-- properties used for filtering and dependency management -->
 		<webobjects.version>5.4.3</webobjects.version>
 		<wonder.version>7.4</wonder.version>
+		<cayenne.version>5.0-M1</cayenne.version>
 
 		<!-- encoding properties -->
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -40,7 +41,7 @@
 			<plugin>
 				<groupId>org.apache.cayenne.plugins</groupId>
 				<artifactId>cayenne-maven-plugin</artifactId>
-				<version>5.0-M1</version>
+				<version>${cayenne.version}</version>
 				<configuration>
 					<map>${project.basedir}/src/main/resources/cayenne/datamap.map.xml</map>
 					<destDir>${project.basedir}/src/main/java</destDir>
@@ -90,7 +91,7 @@
 		<dependency>
 			<groupId>org.apache.cayenne</groupId>
 			<artifactId>cayenne</artifactId>
-			<version>5.0-M1</version>
+			<version>${cayenne.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
